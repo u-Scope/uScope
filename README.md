@@ -40,6 +40,14 @@ Next, replace (source code)/drivers/block/loop.c by kernel-change/loop.c in this
 
 After that, re-compile the system kernel.
 
+```
+sudo make -j8
+make modules_install
+make install
+reboot
+```
+
+
 ### Setp 3: Necessary installation for Device Simulation:
 
 First install nvme-loop module and try to simulate. 
@@ -110,7 +118,7 @@ percent_list=(10)
 delay_list=(10)
 type_list=(0 1 2 3)
 ```
-### Setp 4: Run the test:
+### Setp 5: Run the test:
 
 There are two ways to run the test.
 First of all, make sure all module is unloaded ahead of run because they will be loaded with different parameters during running.
