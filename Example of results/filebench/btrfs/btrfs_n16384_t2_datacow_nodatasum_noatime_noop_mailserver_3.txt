@@ -1,0 +1,413 @@
+Filebench Version 1.5-alpha3
+0.000: Allocated 173MB of shared memory
+0.006: Varmail Version 3.0 personality successfully loaded
+0.006: Populating and pre-allocating filesets
+0.012: bigfileset populated: 8000 files, avg. dir. width = 1000000, avg. dir. depth = 0.7, 0 leafdirs, 122.871MB total size
+0.012: Removing bigfileset tree (if exists)
+0.214: Pre-allocating directories in bigfileset tree
+0.229: Pre-allocating files in bigfileset tree
+0.947: Waiting for pre-allocation to finish (in case of a parallel pre-allocation)
+0.947: Population and pre-allocation of filesets completed
+0.948: Starting 1 filereader instances
+1.949: Running...and log for each ten seconds...
+11.950: parser_run Run took 10 seconds...
+11.951: Per-Operation Breakdown
+closefile4           10205ops     1020ops/s   0.0mb/s   1037.9ns/op [273ns - 616517ns]
+readfile4            10205ops     1020ops/s  15.0mb/s   7590.4ns/op [976ns - 960997ns]
+openfile4            10205ops     1020ops/s   0.0mb/s  15752.2ns/op [1362ns - 2984656ns]
+closefile3           10205ops     1020ops/s   0.0mb/s   1519.3ns/op [346ns - 1013945ns]
+fsyncfile3           10205ops     1020ops/s   0.0mb/s 4900084.8ns/op [1128ns - 99875508ns]
+appendfilerand3      10208ops     1021ops/s   7.9mb/s  27881.7ns/op [37ns - 4465385ns]
+readfile3            10208ops     1021ops/s  15.0mb/s   8167.8ns/op [1046ns - 778290ns]
+openfile3            10208ops     1021ops/s   0.0mb/s  15329.3ns/op [1428ns - 4036265ns]
+closefile2           10208ops     1021ops/s   0.0mb/s   1637.2ns/op [384ns - 465314ns]
+fsyncfile2           10208ops     1021ops/s   0.0mb/s 6131132.4ns/op [222469ns - 432818587ns]
+appendfilerand2      10210ops     1021ops/s   8.0mb/s  18444.3ns/op [30ns - 6694451ns]
+createfile2          10210ops     1021ops/s   0.0mb/s 1023444.6ns/op [6740ns - 70071272ns]
+deletefile1          10209ops     1021ops/s   0.0mb/s 3401487.8ns/op [16090ns - 80983704ns]
+11.951: IO Summary: 132694 ops 13268.600 ops/s 2041/2042 rd/wr  45.9mb/s   3.9ms/op
+21.954: parser_run Run took 20 seconds...
+21.954: Per-Operation Breakdown
+closefile4           1820ops      182ops/s   0.0mb/s    778.0ns/op [277ns - 66996ns]
+readfile4            1820ops      182ops/s   2.8mb/s   7344.3ns/op [1259ns - 257828ns]
+openfile4            1820ops      182ops/s   0.0mb/s   8112.5ns/op [1588ns - 1539400ns]
+closefile3           1820ops      182ops/s   0.0mb/s   3864.6ns/op [410ns - 3619318ns]
+fsyncfile3           1820ops      182ops/s   0.0mb/s 25940665.5ns/op [942ns - 93342680ns]
+appendfilerand3      1821ops      182ops/s   1.4mb/s  54110.7ns/op [38ns - 8682800ns]
+readfile3            1821ops      182ops/s   2.8mb/s   8756.0ns/op [1125ns - 1140407ns]
+openfile3            1821ops      182ops/s   0.0mb/s  11447.7ns/op [1682ns - 2429489ns]
+closefile2           1821ops      182ops/s   0.0mb/s   1833.1ns/op [419ns - 219230ns]
+fsyncfile2           1821ops      182ops/s   0.0mb/s 30529670.7ns/op [975455ns - 80902845ns]
+appendfilerand2      1821ops      182ops/s   1.4mb/s  31566.4ns/op [4443ns - 6354894ns]
+createfile2          1821ops      182ops/s   0.0mb/s 6594020.2ns/op [12717ns - 62850020ns]
+deletefile1          1823ops      182ops/s   0.0mb/s 24573858.3ns/op [59219ns - 70730204ns]
+21.954: IO Summary: 23670 ops 2366.267 ops/s 364/364 rd/wr   8.5mb/s  21.9ms/op
+31.955: parser_run Run took 30 seconds...
+31.955: Per-Operation Breakdown
+closefile4           1445ops      144ops/s   0.0mb/s    765.0ns/op [271ns - 173307ns]
+readfile4            1445ops      144ops/s   2.2mb/s   7532.9ns/op [1121ns - 792529ns]
+openfile4            1445ops      144ops/s   0.0mb/s   9092.5ns/op [1859ns - 1257753ns]
+closefile3           1445ops      144ops/s   0.0mb/s   1510.0ns/op [402ns - 36944ns]
+fsyncfile3           1445ops      144ops/s   0.0mb/s 31686976.7ns/op [454532ns - 115597471ns]
+appendfilerand3      1446ops      145ops/s   1.1mb/s  40740.9ns/op [3062ns - 5435105ns]
+readfile3            1446ops      145ops/s   2.2mb/s   9607.1ns/op [1224ns - 3044446ns]
+openfile3            1446ops      145ops/s   0.0mb/s  24510.4ns/op [1688ns - 8384291ns]
+closefile2           1446ops      145ops/s   0.0mb/s   5528.7ns/op [497ns - 2670199ns]
+fsyncfile2           1446ops      145ops/s   0.0mb/s 41406518.2ns/op [7784791ns - 117580218ns]
+appendfilerand2      1446ops      145ops/s   1.1mb/s  30462.9ns/op [5331ns - 4703606ns]
+createfile2          1446ops      145ops/s   0.0mb/s 9060855.8ns/op [11402ns - 74745053ns]
+deletefile1          1446ops      145ops/s   0.0mb/s 28333800.2ns/op [46833ns - 81454359ns]
+31.955: IO Summary: 18793 ops 1879.178 ops/s 289/289 rd/wr   6.7mb/s  27.7ms/op
+41.956: parser_run Run took 40 seconds...
+41.957: Per-Operation Breakdown
+closefile4           3042ops      304ops/s   0.0mb/s    930.5ns/op [273ns - 480090ns]
+readfile4            3042ops      304ops/s   4.7mb/s  11003.0ns/op [1029ns - 3510950ns]
+openfile4            3042ops      304ops/s   0.0mb/s   8779.6ns/op [1513ns - 3084243ns]
+closefile3           3042ops      304ops/s   0.0mb/s   1839.8ns/op [357ns - 639793ns]
+fsyncfile3           3042ops      304ops/s   0.0mb/s 14798752.2ns/op [275706ns - 111001162ns]
+appendfilerand3      3038ops      304ops/s   2.4mb/s  27655.4ns/op [2920ns - 4174024ns]
+readfile3            3038ops      304ops/s   4.8mb/s   8382.7ns/op [1201ns - 1042131ns]
+openfile3            3038ops      304ops/s   0.0mb/s   9086.5ns/op [1463ns - 1060759ns]
+closefile2           3038ops      304ops/s   0.0mb/s   2792.0ns/op [428ns - 2326884ns]
+fsyncfile2           3038ops      304ops/s   0.0mb/s 20671424.5ns/op [238785ns - 112054934ns]
+appendfilerand2      3042ops      304ops/s   2.4mb/s  27137.7ns/op [4231ns - 5296116ns]
+createfile2          3042ops      304ops/s   0.0mb/s 4160501.9ns/op [7465ns - 75362666ns]
+deletefile1          3037ops      304ops/s   0.0mb/s 12787641.4ns/op [18724ns - 86919553ns]
+41.957: IO Summary: 39521 ops 3951.851 ops/s 608/608 rd/wr  14.3mb/s  13.1ms/op
+51.957: parser_run Run took 50 seconds...
+51.958: Per-Operation Breakdown
+closefile4           1826ops      183ops/s   0.0mb/s    693.1ns/op [274ns - 27209ns]
+readfile4            1826ops      183ops/s   2.9mb/s   8740.0ns/op [1373ns - 1215742ns]
+openfile4            1826ops      183ops/s   0.0mb/s  17427.5ns/op [1691ns - 6601696ns]
+closefile3           1826ops      183ops/s   0.0mb/s   1560.3ns/op [374ns - 80485ns]
+fsyncfile3           1826ops      183ops/s   0.0mb/s 24653801.0ns/op [482190ns - 112930332ns]
+appendfilerand3      1833ops      183ops/s   1.4mb/s  25793.7ns/op [2882ns - 3490394ns]
+readfile3            1833ops      183ops/s   2.9mb/s  10364.5ns/op [1107ns - 5349293ns]
+openfile3            1833ops      183ops/s   0.0mb/s   8270.3ns/op [1592ns - 1592788ns]
+closefile2           1833ops      183ops/s   0.0mb/s   2027.0ns/op [359ns - 191323ns]
+fsyncfile2           1833ops      183ops/s   0.0mb/s 30586690.1ns/op [832060ns - 98065558ns]
+appendfilerand2      1835ops      183ops/s   1.4mb/s  30206.2ns/op [4748ns - 8608942ns]
+createfile2          1835ops      183ops/s   0.0mb/s 7022895.5ns/op [12229ns - 71797534ns]
+deletefile1          1835ops      183ops/s   0.0mb/s 24862084.0ns/op [50179ns - 90145300ns]
+51.958: IO Summary: 23800 ops 2379.849 ops/s 366/367 rd/wr   8.6mb/s  21.8ms/op
+61.958: parser_run Run took 60 seconds...
+61.959: Per-Operation Breakdown
+closefile4           1500ops      150ops/s   0.0mb/s    731.7ns/op [282ns - 36359ns]
+readfile4            1500ops      150ops/s   2.3mb/s   8336.9ns/op [1081ns - 478370ns]
+openfile4            1500ops      150ops/s   0.0mb/s  12246.9ns/op [1679ns - 6592011ns]
+closefile3           1500ops      150ops/s   0.0mb/s   1954.4ns/op [389ns - 555482ns]
+fsyncfile3           1500ops      150ops/s   0.0mb/s 32205906.9ns/op [591433ns - 96912677ns]
+appendfilerand3      1495ops      149ops/s   1.2mb/s  35044.5ns/op [3125ns - 5825732ns]
+readfile3            1495ops      149ops/s   2.3mb/s   7698.3ns/op [1115ns - 202054ns]
+openfile3            1495ops      149ops/s   0.0mb/s  20885.2ns/op [1684ns - 8806902ns]
+closefile2           1495ops      149ops/s   0.0mb/s   3863.5ns/op [456ns - 3047520ns]
+fsyncfile2           1495ops      149ops/s   0.0mb/s 39064536.7ns/op [989248ns - 97539097ns]
+appendfilerand2      1490ops      149ops/s   1.2mb/s  42353.4ns/op [4242ns - 15120160ns]
+createfile2          1490ops      149ops/s   0.0mb/s 8166906.2ns/op [12699ns - 71701226ns]
+deletefile1          1495ops      149ops/s   0.0mb/s 27322024.1ns/op [54340ns - 85926188ns]
+61.959: IO Summary: 19450 ops 1944.878 ops/s 299/298 rd/wr   7.0mb/s  26.7ms/op
+71.960: parser_run Run took 70 seconds...
+71.960: Per-Operation Breakdown
+closefile4           3156ops      316ops/s   0.0mb/s    901.0ns/op [270ns - 539168ns]
+readfile4            3156ops      316ops/s   4.9mb/s   8144.9ns/op [1133ns - 1773931ns]
+openfile4            3156ops      316ops/s   0.0mb/s  10038.7ns/op [1590ns - 4041341ns]
+closefile3           3156ops      316ops/s   0.0mb/s   1458.3ns/op [416ns - 155980ns]
+fsyncfile3           3156ops      316ops/s   0.0mb/s 14442608.1ns/op [225718ns - 104696463ns]
+appendfilerand3      3160ops      316ops/s   2.5mb/s  39849.3ns/op [3049ns - 7985651ns]
+readfile3            3160ops      316ops/s   4.9mb/s   9231.5ns/op [1230ns - 1513985ns]
+openfile3            3160ops      316ops/s   0.0mb/s  13398.5ns/op [1526ns - 9520896ns]
+closefile2           3160ops      316ops/s   0.0mb/s   1939.0ns/op [377ns - 553357ns]
+fsyncfile2           3160ops      316ops/s   0.0mb/s 18521154.5ns/op [189469ns - 104767500ns]
+appendfilerand2      3161ops      316ops/s   2.5mb/s  24780.0ns/op [4114ns - 9401981ns]
+createfile2          3161ops      316ops/s   0.0mb/s 4116792.1ns/op [7596ns - 59844108ns]
+deletefile1          3157ops      316ops/s   0.0mb/s 13389750.8ns/op [15512ns - 87187341ns]
+71.960: IO Summary: 41059 ops 4105.635 ops/s 632/632 rd/wr  14.7mb/s  12.6ms/op
+81.961: parser_run Run took 80 seconds...
+81.961: Per-Operation Breakdown
+closefile4           1790ops      179ops/s   0.0mb/s    803.7ns/op [270ns - 115287ns]
+readfile4            1790ops      179ops/s   2.8mb/s   9522.8ns/op [1237ns - 3642964ns]
+openfile4            1790ops      179ops/s   0.0mb/s   7118.8ns/op [1642ns - 535522ns]
+closefile3           1790ops      179ops/s   0.0mb/s   3209.6ns/op [421ns - 2541570ns]
+fsyncfile3           1790ops      179ops/s   0.0mb/s 25102810.2ns/op [482504ns - 91644972ns]
+appendfilerand3      1788ops      179ops/s   1.4mb/s  43957.0ns/op [2969ns - 4576852ns]
+readfile3            1788ops      179ops/s   2.7mb/s  11661.8ns/op [1275ns - 3472598ns]
+openfile3            1788ops      179ops/s   0.0mb/s  12530.8ns/op [1543ns - 4214072ns]
+closefile2           1788ops      179ops/s   0.0mb/s   4263.6ns/op [433ns - 1875445ns]
+fsyncfile2           1788ops      179ops/s   0.0mb/s 32141531.3ns/op [776501ns - 100554002ns]
+appendfilerand2      1789ops      179ops/s   1.4mb/s  29108.1ns/op [4400ns - 3663200ns]
+createfile2          1789ops      179ops/s   0.0mb/s 7449849.3ns/op [11868ns - 67100368ns]
+deletefile1          1790ops      179ops/s   0.0mb/s 24526953.6ns/op [45530ns - 77197465ns]
+81.961: IO Summary: 23258 ops 2325.655 ops/s 358/358 rd/wr   8.4mb/s  22.3ms/op
+91.962: parser_run Run took 90 seconds...
+91.962: Per-Operation Breakdown
+closefile4           1429ops      143ops/s   0.0mb/s   1108.1ns/op [276ns - 374309ns]
+readfile4            1429ops      143ops/s   2.2mb/s   8412.4ns/op [1337ns - 696828ns]
+openfile4            1429ops      143ops/s   0.0mb/s   8880.3ns/op [1548ns - 1015969ns]
+closefile3           1429ops      143ops/s   0.0mb/s   1684.3ns/op [390ns - 116089ns]
+fsyncfile3           1429ops      143ops/s   0.0mb/s 32244717.3ns/op [557267ns - 103616039ns]
+appendfilerand3      1427ops      143ops/s   1.1mb/s  19927.4ns/op [3253ns - 904865ns]
+readfile3            1427ops      143ops/s   2.3mb/s   9770.0ns/op [1212ns - 2678673ns]
+openfile3            1427ops      143ops/s   0.0mb/s  12873.2ns/op [1623ns - 2724469ns]
+closefile2           1427ops      143ops/s   0.0mb/s   3964.1ns/op [444ns - 2818446ns]
+fsyncfile2           1427ops      143ops/s   0.0mb/s 40062674.7ns/op [908586ns - 103806966ns]
+appendfilerand2      1435ops      143ops/s   1.1mb/s  29793.1ns/op [4794ns - 4682516ns]
+createfile2          1435ops      143ops/s   0.0mb/s 8871661.0ns/op [12970ns - 75726438ns]
+deletefile1          1433ops      143ops/s   0.0mb/s 30160397.3ns/op [61818ns - 83868304ns]
+91.963: IO Summary: 18583 ops 1858.184 ops/s 286/286 rd/wr   6.8mb/s  27.9ms/op
+101.963: parser_run Run took 100 seconds...
+101.964: Per-Operation Breakdown
+closefile4           3195ops      319ops/s   0.0mb/s   3264.6ns/op [273ns - 5441033ns]
+readfile4            3195ops      319ops/s   4.9mb/s   7974.7ns/op [1112ns - 1074718ns]
+openfile4            3195ops      319ops/s   0.0mb/s   9637.9ns/op [1437ns - 4431888ns]
+closefile3           3195ops      319ops/s   0.0mb/s   1849.3ns/op [415ns - 386720ns]
+fsyncfile3           3195ops      319ops/s   0.0mb/s 14372895.7ns/op [1218ns - 99884079ns]
+appendfilerand3      3197ops      320ops/s   2.5mb/s  21828.7ns/op [42ns - 2666493ns]
+readfile3            3197ops      320ops/s   4.9mb/s   8968.2ns/op [1062ns - 2420882ns]
+openfile3            3197ops      320ops/s   0.0mb/s   9343.4ns/op [1563ns - 1367249ns]
+closefile2           3197ops      320ops/s   0.0mb/s   3325.7ns/op [393ns - 2902601ns]
+fsyncfile2           3197ops      320ops/s   0.0mb/s 18390055.0ns/op [238311ns - 114848837ns]
+appendfilerand2      3190ops      319ops/s   2.5mb/s  23963.2ns/op [3869ns - 5834173ns]
+createfile2          3190ops      319ops/s   0.0mb/s 4247166.2ns/op [8079ns - 65807293ns]
+deletefile1          3193ops      319ops/s   0.0mb/s 12981506.1ns/op [17270ns - 75895059ns]
+101.964: IO Summary: 41533 ops 4153.042 ops/s 639/639 rd/wr  14.9mb/s  12.5ms/op
+111.964: parser_run Run took 110 seconds...
+111.965: Per-Operation Breakdown
+closefile4           1786ops      179ops/s   0.0mb/s    755.3ns/op [278ns - 61937ns]
+readfile4            1786ops      179ops/s   2.8mb/s   8941.5ns/op [1207ns - 2919286ns]
+openfile4            1786ops      179ops/s   0.0mb/s  14416.0ns/op [1572ns - 8055697ns]
+closefile3           1786ops      179ops/s   0.0mb/s   1660.5ns/op [354ns - 129409ns]
+fsyncfile3           1786ops      179ops/s   0.0mb/s 25806646.1ns/op [534327ns - 93314296ns]
+appendfilerand3      1784ops      178ops/s   1.4mb/s  25551.7ns/op [3059ns - 5015655ns]
+readfile3            1784ops      178ops/s   2.8mb/s   9413.1ns/op [1058ns - 2045097ns]
+openfile3            1784ops      178ops/s   0.0mb/s   8381.9ns/op [1568ns - 1523452ns]
+closefile2           1784ops      178ops/s   0.0mb/s   2390.6ns/op [415ns - 742615ns]
+fsyncfile2           1784ops      178ops/s   0.0mb/s 31732838.9ns/op [666244ns - 98512988ns]
+appendfilerand2      1787ops      179ops/s   1.4mb/s  23907.0ns/op [4753ns - 3589489ns]
+createfile2          1787ops      179ops/s   0.0mb/s 7143641.7ns/op [11880ns - 74084997ns]
+deletefile1          1785ops      178ops/s   0.0mb/s 24858700.1ns/op [52317ns - 83468834ns]
+111.965: IO Summary: 23209 ops 2320.752 ops/s 357/357 rd/wr   8.3mb/s  22.4ms/op
+121.965: parser_run Run took 120 seconds...
+121.966: Per-Operation Breakdown
+closefile4           1431ops      143ops/s   0.0mb/s    733.2ns/op [292ns - 64320ns]
+readfile4            1431ops      143ops/s   2.3mb/s  14670.3ns/op [1267ns - 3828107ns]
+openfile4            1431ops      143ops/s   0.0mb/s   7888.9ns/op [1738ns - 264806ns]
+closefile3           1431ops      143ops/s   0.0mb/s   1979.4ns/op [428ns - 427323ns]
+fsyncfile3           1431ops      143ops/s   0.0mb/s 32426886.5ns/op [580179ns - 105956520ns]
+appendfilerand3      1434ops      143ops/s   1.1mb/s  22607.4ns/op [2871ns - 1967208ns]
+readfile3            1434ops      143ops/s   2.2mb/s  11419.8ns/op [1282ns - 4712839ns]
+openfile3            1434ops      143ops/s   0.0mb/s  11755.4ns/op [1767ns - 2428997ns]
+closefile2           1434ops      143ops/s   0.0mb/s   4761.0ns/op [369ns - 3367436ns]
+fsyncfile2           1434ops      143ops/s   0.0mb/s 39604649.8ns/op [759824ns - 98092982ns]
+appendfilerand2      1429ops      143ops/s   1.1mb/s  28710.9ns/op [5050ns - 3705560ns]
+createfile2          1429ops      143ops/s   0.0mb/s 9393020.2ns/op [11056ns - 66133611ns]
+deletefile1          1428ops      143ops/s   0.0mb/s 30129936.8ns/op [55198ns - 81993401ns]
+121.966: IO Summary: 18611 ops 1860.983 ops/s 286/286 rd/wr   6.8mb/s  27.9ms/op
+131.967: parser_run Run took 130 seconds...
+131.967: Per-Operation Breakdown
+closefile4           3234ops      323ops/s   0.0mb/s    833.7ns/op [279ns - 155727ns]
+readfile4            3234ops      323ops/s   5.0mb/s   8691.4ns/op [1116ns - 3685991ns]
+openfile4            3234ops      323ops/s   0.0mb/s  10252.8ns/op [1393ns - 3518176ns]
+closefile3           3234ops      323ops/s   0.0mb/s   3153.0ns/op [405ns - 4488759ns]
+fsyncfile3           3234ops      323ops/s   0.0mb/s 14228948.9ns/op [226015ns - 107095053ns]
+appendfilerand3      3241ops      324ops/s   2.5mb/s  25229.9ns/op [2674ns - 3572096ns]
+readfile3            3241ops      324ops/s   5.0mb/s   8921.3ns/op [1053ns - 3104925ns]
+openfile3            3241ops      324ops/s   0.0mb/s  10185.9ns/op [1505ns - 3677453ns]
+closefile2           3241ops      324ops/s   0.0mb/s   4070.9ns/op [364ns - 4836810ns]
+fsyncfile2           3241ops      324ops/s   0.0mb/s 18777020.8ns/op [191532ns - 107596989ns]
+appendfilerand2      3240ops      324ops/s   2.5mb/s  22880.7ns/op [40ns - 3478961ns]
+createfile2          3240ops      324ops/s   0.0mb/s 4089051.5ns/op [7705ns - 76110400ns]
+deletefile1          3240ops      324ops/s   0.0mb/s 12188071.0ns/op [18917ns - 80320351ns]
+131.967: IO Summary: 42095 ops 4209.241 ops/s 647/648 rd/wr  15.1mb/s  12.3ms/op
+141.968: parser_run Run took 140 seconds...
+141.968: Per-Operation Breakdown
+closefile4           1740ops      174ops/s   0.0mb/s    681.4ns/op [277ns - 43732ns]
+readfile4            1740ops      174ops/s   2.7mb/s   9426.2ns/op [763ns - 2655948ns]
+openfile4            1740ops      174ops/s   0.0mb/s   9351.1ns/op [1624ns - 3634178ns]
+closefile3           1740ops      174ops/s   0.0mb/s   1410.8ns/op [413ns - 133686ns]
+fsyncfile3           1740ops      174ops/s   0.0mb/s 25492554.9ns/op [492339ns - 112792414ns]
+appendfilerand3      1732ops      173ops/s   1.4mb/s  23697.9ns/op [3231ns - 3308432ns]
+readfile3            1732ops      173ops/s   2.6mb/s   9588.4ns/op [1102ns - 2868216ns]
+openfile3            1732ops      173ops/s   0.0mb/s  13963.6ns/op [1643ns - 4343626ns]
+closefile2           1732ops      173ops/s   0.0mb/s   1969.5ns/op [383ns - 286068ns]
+fsyncfile2           1732ops      173ops/s   0.0mb/s 33532228.0ns/op [652879ns - 115751898ns]
+appendfilerand2      1737ops      174ops/s   1.3mb/s  35415.2ns/op [4183ns - 6240989ns]
+createfile2          1737ops      174ops/s   0.0mb/s 7434900.6ns/op [12276ns - 64174347ns]
+deletefile1          1739ops      174ops/s   0.0mb/s 25197513.5ns/op [52186ns - 79745055ns]
+141.968: IO Summary: 22573 ops 2257.163 ops/s 347/347 rd/wr   8.0mb/s  23.0ms/op
+151.970: parser_run Run took 150 seconds...
+151.970: Per-Operation Breakdown
+closefile4           1454ops      145ops/s   0.0mb/s    686.6ns/op [287ns - 37947ns]
+readfile4            1454ops      145ops/s   2.2mb/s   9475.6ns/op [965ns - 3600236ns]
+openfile4            1454ops      145ops/s   0.0mb/s  12251.0ns/op [1549ns - 2452477ns]
+closefile3           1454ops      145ops/s   0.0mb/s   2129.0ns/op [375ns - 578629ns]
+fsyncfile3           1454ops      145ops/s   0.0mb/s 31312358.6ns/op [592781ns - 115556809ns]
+appendfilerand3      1455ops      145ops/s   1.2mb/s  22215.7ns/op [3160ns - 1260180ns]
+readfile3            1455ops      145ops/s   2.2mb/s  13918.6ns/op [1204ns - 7404391ns]
+openfile3            1455ops      145ops/s   0.0mb/s  11944.7ns/op [1757ns - 3614843ns]
+closefile2           1455ops      145ops/s   0.0mb/s   3832.7ns/op [397ns - 1481938ns]
+fsyncfile2           1455ops      145ops/s   0.0mb/s 40022860.3ns/op [941250ns - 108664790ns]
+appendfilerand2      1454ops      145ops/s   1.1mb/s  22336.2ns/op [5053ns - 4176333ns]
+createfile2          1454ops      145ops/s   0.0mb/s 9288643.9ns/op [11146ns - 80939617ns]
+deletefile1          1453ops      145ops/s   0.0mb/s 29305968.1ns/op [61146ns - 85643544ns]
+151.970: IO Summary: 18906 ops 1890.370 ops/s 291/291 rd/wr   6.7mb/s  27.5ms/op
+161.971: parser_run Run took 160 seconds...
+161.971: Per-Operation Breakdown
+closefile4           3233ops      323ops/s   0.0mb/s    907.9ns/op [280ns - 276168ns]
+readfile4            3233ops      323ops/s   5.1mb/s  10209.5ns/op [1123ns - 4715777ns]
+openfile4            3233ops      323ops/s   0.0mb/s   9157.8ns/op [1575ns - 3736036ns]
+closefile3           3233ops      323ops/s   0.0mb/s   2879.3ns/op [373ns - 3905772ns]
+fsyncfile3           3233ops      323ops/s   0.0mb/s 14272614.8ns/op [185622ns - 104868576ns]
+appendfilerand3      3233ops      323ops/s   2.5mb/s  22688.0ns/op [3050ns - 3606795ns]
+readfile3            3233ops      323ops/s   5.0mb/s   9820.0ns/op [1192ns - 2380080ns]
+openfile3            3233ops      323ops/s   0.0mb/s  13144.8ns/op [1495ns - 4015845ns]
+closefile2           3233ops      323ops/s   0.0mb/s   1538.7ns/op [390ns - 153742ns]
+fsyncfile2           3233ops      323ops/s   0.0mb/s 18159924.8ns/op [204027ns - 104970941ns]
+appendfilerand2      3232ops      323ops/s   2.6mb/s  23306.0ns/op [3985ns - 3845301ns]
+createfile2          3232ops      323ops/s   0.0mb/s 4126202.9ns/op [7990ns - 74763229ns]
+deletefile1          3231ops      323ops/s   0.0mb/s 12811369.4ns/op [18671ns - 75685629ns]
+161.971: IO Summary: 42025 ops 4202.258 ops/s 647/646 rd/wr  15.1mb/s  12.4ms/op
+171.972: parser_run Run took 170 seconds...
+171.972: Per-Operation Breakdown
+closefile4           1655ops      165ops/s   0.0mb/s    762.9ns/op [286ns - 93360ns]
+readfile4            1655ops      165ops/s   2.6mb/s   9515.3ns/op [1309ns - 3706692ns]
+openfile4            1655ops      165ops/s   0.0mb/s   8224.8ns/op [1603ns - 1218512ns]
+closefile3           1655ops      165ops/s   0.0mb/s   1604.7ns/op [432ns - 121520ns]
+fsyncfile3           1655ops      165ops/s   0.0mb/s 28944476.2ns/op [220571ns - 112854119ns]
+appendfilerand3      1654ops      165ops/s   1.3mb/s  33184.1ns/op [2831ns - 5071692ns]
+readfile3            1654ops      165ops/s   2.6mb/s  11948.9ns/op [1316ns - 3542273ns]
+openfile3            1654ops      165ops/s   0.0mb/s  10675.9ns/op [1579ns - 997424ns]
+closefile2           1654ops      165ops/s   0.0mb/s   3922.4ns/op [401ns - 2446755ns]
+fsyncfile2           1654ops      165ops/s   0.0mb/s 35106291.8ns/op [695367ns - 99608889ns]
+appendfilerand2      1651ops      165ops/s   1.3mb/s  30181.6ns/op [4978ns - 6060040ns]
+createfile2          1651ops      165ops/s   0.0mb/s 7487413.4ns/op [12527ns - 71813506ns]
+deletefile1          1653ops      165ops/s   0.0mb/s 25165586.9ns/op [37308ns - 82317438ns]
+171.972: IO Summary: 21500 ops 2149.865 ops/s 331/330 rd/wr   7.8mb/s  24.2ms/op
+181.973: parser_run Run took 180 seconds...
+181.973: Per-Operation Breakdown
+closefile4           1484ops      148ops/s   0.0mb/s   1079.7ns/op [282ns - 509311ns]
+readfile4            1484ops      148ops/s   2.3mb/s   7984.2ns/op [1226ns - 809968ns]
+openfile4            1484ops      148ops/s   0.0mb/s  16321.2ns/op [1770ns - 5715743ns]
+closefile3           1484ops      148ops/s   0.0mb/s   1681.0ns/op [381ns - 139797ns]
+fsyncfile3           1484ops      148ops/s   0.0mb/s 30495488.4ns/op [946ns - 103403187ns]
+appendfilerand3      1485ops      148ops/s   1.2mb/s  30876.7ns/op [36ns - 4921273ns]
+readfile3            1485ops      148ops/s   2.3mb/s  18460.4ns/op [1283ns - 9414238ns]
+openfile3            1485ops      148ops/s   0.0mb/s  19079.8ns/op [1548ns - 4633695ns]
+closefile2           1485ops      148ops/s   0.0mb/s   3452.2ns/op [375ns - 1063361ns]
+fsyncfile2           1485ops      148ops/s   0.0mb/s 39877688.2ns/op [806922ns - 104872504ns]
+appendfilerand2      1487ops      149ops/s   1.2mb/s  33541.6ns/op [4736ns - 7492759ns]
+createfile2          1487ops      149ops/s   0.0mb/s 9052831.9ns/op [12434ns - 74647253ns]
+deletefile1          1487ops      149ops/s   0.0mb/s 27999995.8ns/op [45169ns - 91410416ns]
+181.973: IO Summary: 19306 ops 1930.479 ops/s 297/297 rd/wr   7.0mb/s  26.9ms/op
+191.974: parser_run Run took 190 seconds...
+191.974: Per-Operation Breakdown
+closefile4           3275ops      327ops/s   0.0mb/s   1265.6ns/op [270ns - 689268ns]
+readfile4            3275ops      327ops/s   5.2mb/s   8101.6ns/op [1064ns - 655706ns]
+openfile4            3275ops      327ops/s   0.0mb/s  11503.7ns/op [1517ns - 6643132ns]
+closefile3           3275ops      327ops/s   0.0mb/s   1601.1ns/op [359ns - 162920ns]
+fsyncfile3           3275ops      327ops/s   0.0mb/s 14102839.4ns/op [246301ns - 102432738ns]
+appendfilerand3      3275ops      327ops/s   2.5mb/s  22717.0ns/op [2674ns - 4198967ns]
+readfile3            3275ops      327ops/s   5.1mb/s  10122.3ns/op [1120ns - 6937852ns]
+openfile3            3275ops      327ops/s   0.0mb/s  11486.1ns/op [1580ns - 5980225ns]
+closefile2           3275ops      327ops/s   0.0mb/s   2629.4ns/op [380ns - 2460833ns]
+fsyncfile2           3275ops      327ops/s   0.0mb/s 17588148.5ns/op [225043ns - 102751017ns]
+appendfilerand2      3275ops      327ops/s   2.5mb/s  24205.1ns/op [4239ns - 4429586ns]
+createfile2          3275ops      327ops/s   0.0mb/s 3973107.1ns/op [7062ns - 65039812ns]
+deletefile1          3275ops      327ops/s   0.0mb/s 12996850.5ns/op [16547ns - 72176836ns]
+191.974: IO Summary: 42575 ops 4257.223 ops/s 655/655 rd/wr  15.4mb/s  12.2ms/op
+201.975: parser_run Run took 200 seconds...
+201.976: Per-Operation Breakdown
+closefile4           1674ops      167ops/s   0.0mb/s   1010.6ns/op [273ns - 521245ns]
+readfile4            1674ops      167ops/s   2.6mb/s   8863.7ns/op [1116ns - 2891252ns]
+openfile4            1674ops      167ops/s   0.0mb/s  16323.4ns/op [1524ns - 7150405ns]
+closefile3           1674ops      167ops/s   0.0mb/s   1874.3ns/op [383ns - 259344ns]
+fsyncfile3           1674ops      167ops/s   0.0mb/s 25272429.6ns/op [552650ns - 112185482ns]
+appendfilerand3      1673ops      167ops/s   1.3mb/s  21943.2ns/op [2932ns - 3161596ns]
+readfile3            1673ops      167ops/s   2.7mb/s  11560.8ns/op [1138ns - 3404722ns]
+openfile3            1673ops      167ops/s   0.0mb/s  12862.7ns/op [1667ns - 4722960ns]
+closefile2           1673ops      167ops/s   0.0mb/s   5220.1ns/op [388ns - 3414874ns]
+fsyncfile2           1673ops      167ops/s   0.0mb/s 34972391.7ns/op [691504ns - 112385200ns]
+appendfilerand2      1673ops      167ops/s   1.3mb/s  23014.0ns/op [4699ns - 6832440ns]
+createfile2          1673ops      167ops/s   0.0mb/s 8321867.2ns/op [11156ns - 77351646ns]
+deletefile1          1672ops      167ops/s   0.0mb/s 26898475.6ns/op [54853ns - 87216152ns]
+201.976: IO Summary: 21753 ops 2175.163 ops/s 335/335 rd/wr   7.9mb/s  23.9ms/op
+211.976: parser_run Run took 210 seconds...
+211.977: Per-Operation Breakdown
+closefile4           1498ops      150ops/s   0.0mb/s   3536.8ns/op [288ns - 3858790ns]
+readfile4            1498ops      150ops/s   2.4mb/s   7812.9ns/op [1326ns - 316736ns]
+openfile4            1498ops      150ops/s   0.0mb/s   8431.9ns/op [1718ns - 572461ns]
+closefile3           1498ops      150ops/s   0.0mb/s   5048.9ns/op [402ns - 4467532ns]
+fsyncfile3           1498ops      150ops/s   0.0mb/s 30897633.8ns/op [440326ns - 117258300ns]
+appendfilerand3      1501ops      150ops/s   1.2mb/s  30895.6ns/op [3370ns - 5698416ns]
+readfile3            1501ops      150ops/s   2.3mb/s  14078.4ns/op [1231ns - 5687570ns]
+openfile3            1501ops      150ops/s   0.0mb/s  16203.9ns/op [1962ns - 3970378ns]
+closefile2           1501ops      150ops/s   0.0mb/s   1738.1ns/op [504ns - 183036ns]
+fsyncfile2           1501ops      150ops/s   0.0mb/s 38687025.2ns/op [635507ns - 117111724ns]
+appendfilerand2      1502ops      150ops/s   1.2mb/s  35859.1ns/op [48ns - 5756458ns]
+createfile2          1502ops      150ops/s   0.0mb/s 8214813.6ns/op [12449ns - 63680621ns]
+deletefile1          1501ops      150ops/s   0.0mb/s 28459588.8ns/op [53983ns - 76994933ns]
+211.977: IO Summary: 19500 ops 1949.866 ops/s 300/300 rd/wr   7.0mb/s  26.6ms/op
+221.978: parser_run Run took 220 seconds...
+221.978: Per-Operation Breakdown
+closefile4           3287ops      329ops/s   0.0mb/s    892.3ns/op [279ns - 600535ns]
+readfile4            3287ops      329ops/s   5.1mb/s   9677.3ns/op [923ns - 3381572ns]
+openfile4            3287ops      329ops/s   0.0mb/s   9238.3ns/op [1504ns - 3384323ns]
+closefile3           3287ops      329ops/s   0.0mb/s   4210.3ns/op [421ns - 7152619ns]
+fsyncfile3           3287ops      329ops/s   0.0mb/s 14356465.8ns/op [271033ns - 89595470ns]
+appendfilerand3      3289ops      329ops/s   2.6mb/s  23478.1ns/op [2850ns - 3466528ns]
+readfile3            3289ops      329ops/s   5.3mb/s   9655.3ns/op [1234ns - 3662870ns]
+openfile3            3289ops      329ops/s   0.0mb/s  10877.7ns/op [1511ns - 4869795ns]
+closefile2           3289ops      329ops/s   0.0mb/s   4210.3ns/op [366ns - 7925200ns]
+fsyncfile2           3289ops      329ops/s   0.0mb/s 17431250.6ns/op [249150ns - 90318372ns]
+appendfilerand2      3290ops      329ops/s   2.5mb/s  19342.5ns/op [48ns - 919655ns]
+createfile2          3290ops      329ops/s   0.0mb/s 3903433.7ns/op [7309ns - 78999534ns]
+deletefile1          3290ops      329ops/s   0.0mb/s 12721297.4ns/op [17521ns - 82508898ns]
+221.978: IO Summary: 42750 ops 4274.730 ops/s 658/658 rd/wr  15.6mb/s  12.1ms/op
+231.979: parser_run Run took 230 seconds...
+231.979: Per-Operation Breakdown
+closefile4           1595ops      159ops/s   0.0mb/s    694.7ns/op [286ns - 28055ns]
+readfile4            1595ops      159ops/s   2.6mb/s  14031.6ns/op [1196ns - 6883436ns]
+openfile4            1595ops      159ops/s   0.0mb/s  11980.2ns/op [1801ns - 3137342ns]
+closefile3           1595ops      159ops/s   0.0mb/s   1789.3ns/op [416ns - 198708ns]
+fsyncfile3           1595ops      159ops/s   0.0mb/s 28609642.8ns/op [411628ns - 105796378ns]
+appendfilerand3      1590ops      159ops/s   1.2mb/s  26359.5ns/op [3455ns - 9010610ns]
+readfile3            1590ops      159ops/s   2.5mb/s   9098.1ns/op [1064ns - 383606ns]
+openfile3            1590ops      159ops/s   0.0mb/s  25739.0ns/op [1595ns - 10928108ns]
+closefile2           1590ops      159ops/s   0.0mb/s   2152.2ns/op [409ns - 613280ns]
+fsyncfile2           1590ops      159ops/s   0.0mb/s 38429804.5ns/op [673638ns - 116361639ns]
+appendfilerand2      1589ops      159ops/s   1.3mb/s  23260.3ns/op [36ns - 3968761ns]
+createfile2          1589ops      159ops/s   0.0mb/s 8017581.0ns/op [10750ns - 71778370ns]
+deletefile1          1590ops      159ops/s   0.0mb/s 25587842.8ns/op [53524ns - 75659206ns]
+231.979: IO Summary: 20693 ops 2069.162 ops/s 318/318 rd/wr   7.5mb/s  25.2ms/op
+241.980: parser_run Run took 240 seconds...
+241.980: Per-Operation Breakdown
+closefile4           1544ops      154ops/s   0.0mb/s   1545.0ns/op [280ns - 1198369ns]
+readfile4            1544ops      154ops/s   2.5mb/s   7979.2ns/op [1414ns - 829278ns]
+openfile4            1544ops      154ops/s   0.0mb/s  10815.4ns/op [1674ns - 2492174ns]
+closefile3           1544ops      154ops/s   0.0mb/s   3059.6ns/op [427ns - 2487986ns]
+fsyncfile3           1544ops      154ops/s   0.0mb/s 29898085.7ns/op [388887ns - 117048797ns]
+appendfilerand3      1544ops      154ops/s   1.2mb/s  30100.4ns/op [3313ns - 4554658ns]
+readfile3            1544ops      154ops/s   2.4mb/s   7923.3ns/op [1117ns - 505604ns]
+openfile3            1544ops      154ops/s   0.0mb/s  10518.8ns/op [1696ns - 3326065ns]
+closefile2           1544ops      154ops/s   0.0mb/s   5097.3ns/op [463ns - 3540223ns]
+fsyncfile2           1544ops      154ops/s   0.0mb/s 37650652.3ns/op [841101ns - 117648734ns]
+appendfilerand2      1549ops      155ops/s   1.2mb/s  40138.8ns/op [5184ns - 9431542ns]
+createfile2          1549ops      155ops/s   0.0mb/s 7972939.4ns/op [9980ns - 74072047ns]
+deletefile1          1548ops      155ops/s   0.0mb/s 27410359.3ns/op [44429ns - 76235660ns]
+241.980: IO Summary: 20086 ops 2008.475 ops/s 309/309 rd/wr   7.3mb/s  25.8ms/op
+251.981: parser_run Run took 250 seconds...
+251.981: Per-Operation Breakdown
+closefile4           3294ops      329ops/s   0.0mb/s    876.6ns/op [275ns - 286659ns]
+readfile4            3294ops      329ops/s   5.3mb/s   7565.1ns/op [648ns - 444926ns]
+openfile4            3294ops      329ops/s   0.0mb/s   7505.9ns/op [1461ns - 884203ns]
+closefile3           3294ops      329ops/s   0.0mb/s   1526.1ns/op [353ns - 279634ns]
+fsyncfile3           3294ops      329ops/s   0.0mb/s 14272127.9ns/op [186990ns - 108215619ns]
+appendfilerand3      3296ops      330ops/s   2.6mb/s  30134.0ns/op [3132ns - 5174184ns]
+readfile3            3296ops      330ops/s   5.2mb/s   8051.1ns/op [1193ns - 1169690ns]
+openfile3            3296ops      330ops/s   0.0mb/s   9778.6ns/op [1471ns - 3665787ns]
+closefile2           3296ops      330ops/s   0.0mb/s   1942.0ns/op [406ns - 599579ns]
+fsyncfile2           3296ops      330ops/s   0.0mb/s 17985837.0ns/op [295333ns - 108213015ns]
+appendfilerand2      3292ops      329ops/s   2.6mb/s  23733.9ns/op [3998ns - 3683883ns]
+createfile2          3292ops      329ops/s   0.0mb/s 3891494.3ns/op [7111ns - 72245515ns]
+deletefile1          3292ops      329ops/s   0.0mb/s 12378380.8ns/op [17189ns - 79369007ns]
+251.981: IO Summary: 42826 ops 4282.329 ops/s 659/659 rd/wr  15.7mb/s  12.2ms/op
+251.981: Shutting down processes
