@@ -1,4 +1,4 @@
-# uScope: Evaluating Storage Stack Robustness against Fail-slow Devices
+# μScope: Evaluating Storage Stack Robustness against Fail-slow Devices
 
 The repository includes the following artifacts:
 
