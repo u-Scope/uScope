@@ -1,4 +1,4 @@
-# When the Modern Storage Stack encounters Fail-slow
+# uScope: Evaluating Storage Stack Robustness against Fail-slow Devices
 
 The repository includes the following artifacts:
 
