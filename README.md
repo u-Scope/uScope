@@ -56,6 +56,8 @@ In the command /path/to/nvme should be replaced by user.
 ```
 sudo apt-get install nvme-loop
 
+sudo modprobe nvme-loop
+
 dd if=/dev/zero of=/path/to/nvme bs=1M count=1000
 
 losetup -f /path/to/nvme
