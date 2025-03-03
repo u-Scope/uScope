@@ -37,6 +37,7 @@ Set the Device Drivers -> Block devices -> RAM block device support to "M".
 And then save changes to .config.
 
 Next, replace (source code)/drivers/block/loop.c by kernel-change/loop.c in this repository.
+replace (source code)/drivers/block/brd.c by brd.c in this repository.
 
 After that, re-compile the system kernel.
 
